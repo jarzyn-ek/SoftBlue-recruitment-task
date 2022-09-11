@@ -1,0 +1,22 @@
+<div class="comments">
+  <div class="comments__header">
+    <div class="comments__header-main">Comments</div>
+    <div *ngIf="comments" class="comments__header-oldest-newest">
+      <button
+        (click)="handleSortOptionChange(sortOptionEnum.OLDEST)"
+        mat-button
+      >
+        oldest</button
+      >|<button
+        (click)="handleSortOptionChange(sortOptionEnum.NEWEST)"
+        mat-button
+      >
+        newest
+      </button>
+    </div>
+  </div>
+  <div class="comments__content">
+    <app-show-all-comments [comments]="comments"></app-show-all-comments>
+  </div>
+  <app-add-comment (newCommentAdded)="updateComments.next()"></app-add-comment>
+</div>

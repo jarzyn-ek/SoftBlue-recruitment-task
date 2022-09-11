@@ -1,0 +1,14 @@
+<mat-card class="single-experience-wrapper">
+  <mat-card-title-group>
+    <div class="material-icons single-experience-wrapper__icon">phonelink</div>
+    <mat-card-title>{{ experience.company }}</mat-card-title>
+    <mat-card-subtitle
+      >{{ experience.from | date: "MMMM yyyy" }} -
+      {{ experience.to | date: "MMMM yyyy" }}</mat-card-subtitle
+    >
+  </mat-card-title-group>
+  <mat-card-content>
+    <p class="single-experience-wrapper__description">Print & Web Designer</p>
+    {{ experience.description }}
+  </mat-card-content>
+</mat-card>

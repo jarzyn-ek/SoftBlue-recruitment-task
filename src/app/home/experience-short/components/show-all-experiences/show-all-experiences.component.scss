@@ -1,0 +1,10 @@
+.experiences {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .experiences__experience {
+    width: 50%;
+    margin: 16px 0 16px 0;
+  }
+}

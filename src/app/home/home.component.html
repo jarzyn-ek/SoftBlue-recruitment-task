@@ -1,0 +1,11 @@
+<div class="home-wrapper">
+  <ng-container *ngIf="servicesProcessing || experienceProcessing">
+    <mat-spinner></mat-spinner>
+  </ng-container>
+  <app-services-short
+    (processingDone)="servicesProcessing = false"
+  ></app-services-short>
+  <app-experience-short
+    (processingDone)="experienceProcessing = false"
+  ></app-experience-short>
+</div>

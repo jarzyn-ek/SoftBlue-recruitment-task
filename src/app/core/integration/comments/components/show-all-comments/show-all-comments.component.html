@@ -1,0 +1,10 @@
+<app-single-comment
+  *ngFor="let comment of activeComments"
+  [comment]="comment"
+></app-single-comment>
+<app-pagination
+  *ngIf="comments"
+  [elementsPerPage]="elementsPerPage"
+  [elements]="comments"
+  (activeElements)="handleActiveCommentsChange($event)"
+></app-pagination>

@@ -1,0 +1,21 @@
+.wrapper {
+  margin: 16px;
+  & > * {
+    margin: 16px;
+    text-align: center;
+  }
+  .wrapper__feature-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: #00bbd3;
+    box-shadow: 0 0 8px 0 #00bbd3;
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+  }
+  .wrapper__feature-icon-title {
+    font-weight: 900;
+  }
+}

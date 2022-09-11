@@ -1,0 +1,25 @@
+.single-experience-wrapper {
+  max-width: 400px;
+  margin: 0 auto 8px auto;
+  background-color: #081720;
+  box-shadow: 0 0 10px 10px #081720;
+  .single-experience-wrapper__description {
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0 0 16px 0;
+  }
+  .single-experience-wrapper__icon {
+    width: 44px;
+    height: 44px;
+    font-size: 30px;
+    background-color: #00bbd3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px 0 #00bbd3;
+  }
+}
+
+.mat-card-title {
+  font-size: 16px;
+}

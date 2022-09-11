@@ -1,0 +1,7 @@
+<div class="feature-wrapper">
+  <app-feature
+    *ngFor="let feature of features"
+    [featureItem]="feature"
+    [iconName]="getIconNameForFeature(feature)"
+  ></app-feature>
+</div>

@@ -1,0 +1,19 @@
+.page-button {
+  width: 30px;
+  height: 30px;
+  color: #fcfefd;
+  background-color: transparent;
+  font-size: 16px;
+  border: none;
+  border-radius: 2px;
+  margin: 4px;
+  &:hover {
+    cursor: pointer;
+  }
+  &:active {
+    box-shadow: 0 0 8px #00bbd3;
+  }
+}
+.active-page {
+  background-color: #00bbd3;
+}

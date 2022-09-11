@@ -1,0 +1,14 @@
+<ng-container *ngIf="!shortenedVersion; else shortenedPagination">
+  <button
+    [class.active-page]="activePage === page + 1"
+    class="page-button"
+    *ngFor="let page of numberOfPages | enumerate"
+    (click)="handleActivePageChange(page + 1)"
+  >
+    {{ page + 1 }}
+  </button>
+</ng-container>
+
+<ng-template #shortenedPagination>
+  <!--TODO: zaimplementować skróconą paginację-->
+</ng-template>

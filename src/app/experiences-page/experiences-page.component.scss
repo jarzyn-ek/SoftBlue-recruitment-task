@@ -1,0 +1,8 @@
+.experiences-content {
+  display: flex;
+  flex-wrap: wrap;
+  & > p {
+    width: 45%;
+    margin: 16px auto;
+  }
+}

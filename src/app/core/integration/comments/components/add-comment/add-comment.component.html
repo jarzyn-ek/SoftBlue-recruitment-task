@@ -1,0 +1,31 @@
+<div class="add-comment">
+  <div class="add-comment__header">Add comment</div>
+  <form
+    class="add-comment__form"
+    [formGroup]="addCommentFormGroup"
+    (ngSubmit)="addCommentFormGroup.valid && addComment()"
+  >
+    <div class="add-comment__form-row">
+      <mat-form-field class="add-comment__form-name" appearance="outline">
+        <mat-label>Your Name</mat-label>
+        <input formControlName="name" matInput />
+      </mat-form-field>
+      <mat-form-field class="add-comment__form-email" appearance="outline">
+        <mat-label>Your Email</mat-label>
+        <input formControlName="email" matInput />
+      </mat-form-field>
+    </div>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Your message</mat-label>
+      <textarea formControlName="message" matInput></textarea>
+    </mat-form-field>
+    <button
+      class="add-comment__form-send"
+      [disabled]="!addCommentFormGroup.valid"
+      mat-button
+    >
+      Send
+    </button>
+  </form>
+</div>

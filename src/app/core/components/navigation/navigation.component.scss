@@ -1,0 +1,17 @@
+.navigation-wrapper {
+  display: flex;
+  justify-content: end;
+  margin: 16px;
+
+  .navigation-wrapper__link {
+    color: #fcfefd;
+  }
+  .navigation-wrapper__link:last-child {
+    background-color: #00bbd3;
+    box-shadow: 0 0 8px 0 #00bbd3;
+  }
+  .navigation-wrapper__link:hover {
+    background-color: #838383;
+    box-shadow: 0 0 8px 0 #00bbd3;
+  }
+}

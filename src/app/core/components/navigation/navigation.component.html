@@ -1,0 +1,17 @@
+<div class="navigation-wrapper">
+  <button
+    mat-button
+    class="navigation-wrapper__link"
+    *ngFor="let config of configs"
+    [routerLink]="config.path"
+  >
+    {{ config.name }}
+  </button>
+  <button
+    mat-button
+    (click)="scrollToComments()"
+    class="navigation-wrapper__link"
+  >
+    Comments
+  </button>
+</div>
